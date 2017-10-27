@@ -101,7 +101,8 @@ export default class ProjectedLayer extends React.Component<Props, any> {
     const finalStyle = {
       ...defaultStyle,
       ...style,
-      transform: overlayTransform(this.state as OverlayProps).join(' ')
+      transform: overlayTransform(this.state as OverlayProps).join(' '),
+      webkitTransform: overlayTransform(this.state as OverlayProps).join(' ')
     };
 
     return (
